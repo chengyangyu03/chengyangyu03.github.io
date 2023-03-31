@@ -105,11 +105,6 @@
 					
 				
 					
-						<a class="github" href="#" 
-												title="GitHub" target="_blank"><i class="icon-github"></i></a>
-					
-				
-					
 						<a class="gitee" href="#" 
 												title="gitee" target="_blank"><i class="icon-gitee"></i></a>
 					
@@ -163,11 +158,6 @@
 			
 			<nav class="header-nav">
 				<div class="social">
-					
-						
-						<a class="github" target="_blank" 
-							href="#" title="GitHub"><i class="icon-github"></i></a>
-						
 					
 						
 						<a class="github" target="_blank" 
@@ -624,6 +614,16 @@
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
   
   
+  
+  <script type="text/javascript" src="/lib/snow.js"></script>
+  <script type="text/javascript" src="/lib/jquery-2.1.4.min.js"></script>
+  <script>
+    snow.down();
+    $(window).resize(function() {
+      $("canvas").css("z-index","500").remove();
+      snow.down();
+    });
+  </script>
   
 </body>
 
